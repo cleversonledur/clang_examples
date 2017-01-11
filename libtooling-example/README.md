@@ -1,4 +1,4 @@
-## Clang Lib Source to Source Transformation Example
+## Libtooling Source to Source Transformation Example
 
 This is a simple example of source-to-source transformation.
 
@@ -45,3 +45,5 @@ int main(){
         std::cout << "a Value: " << d->a << d->c << std::endl;
 }
 ```
+
+Cleverson Ledur
