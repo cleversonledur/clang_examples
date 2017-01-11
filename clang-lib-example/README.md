@@ -5,6 +5,7 @@ This is a simple example of source-to-source transformation.
 The objective here was to use an auxiliar struct to pass variables to a function. Then, this tries to perform the following transformation:
 
 ### Original Code:
+```c++
 void func(int &a, char &c){
         a=10;
         c='C';
@@ -17,7 +18,7 @@ int main(){
         func(a,c);
         std::cout << "a Value: " << a << c << std::endl;
 }
- 
+```
 ### Transformed Code:
 
 typedef struct{
