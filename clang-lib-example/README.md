@@ -15,12 +15,11 @@ int main(){
         char c;
         func(a,c);
         std::cout << "a Value: " << a << c << std::endl;
-        func(a,c);
-        std::cout << "a Value: " << a << c << std::endl;
 }
 ```
 ### Transformed Code:
 
+```c++
 typedef struct{
         int a;
         char c;
@@ -45,3 +44,4 @@ int main(){
         func(d->a, d->c);
         std::cout << "a Value: " << d->a << d->c << std::endl;
 }
+```
